@@ -1,0 +1,50 @@
+{
+  "name": "@browserview/mcp",
+  "version": "0.3.1",
+  "description": "MCP server for browserview.io - disposable cloud Chromium sessions with live human viewing and CDP access for agents",
+  "license": "MIT",
+  "author": "BrowserView",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/browserview/mcp.git"
+  },
+  "homepage": "https://browserview.io/docs/mcp",
+  "bugs": {
+    "url": "https://github.com/browserview/mcp/issues"
+  },
+  "type": "module",
+  "bin": {
+    "browserview-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "browser",
+    "chromium",
+    "cdp",
+    "playwright",
+    "puppeteer",
+    "browserview"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
